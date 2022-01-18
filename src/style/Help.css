@@ -1,0 +1,31 @@
+.Help{
+    width: 80%;
+    margin: auto;
+    background: #1B2B65;
+    border-radius: 8px;
+    text-align: center;
+    
+    margin-top: 150px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+.Help p{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+}
+.Help img{
+    padding: 5px;
+    border-radius: 50%;
+    background: #AABBFA;
+    margin-top: -20px;
+}
+.Help button {
+    padding: 12px 20px;
+    width: 80%;
+    background: #017EFA;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    color: #fff;
+}

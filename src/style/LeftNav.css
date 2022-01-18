@@ -1,0 +1,272 @@
+ body {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+     background: #F8F9FF;
+     font-family: 'Gilroy-Bold', sans-serif;
+     font-family: 'Gilroy-Heavy', sans-serif;
+     font-family: 'Gilroy-Light', sans-serif;
+     font-family: 'Gilroy-Medium', sans-serif;
+     font-family: 'Gilroy-Regular', sans-serif;
+
+ }
+
+
+.inbox{
+    padding: 0px 6px;
+    background: #CF3A59;
+    border-radius: 2px;
+    font-size: 11px;
+    margin-bottom: -3px;
+    margin-left: 45%;
+}
+
+ /* ================================================================== */
+
+ @media only screen and (max-width:1200px) {
+
+
+     .LeftNav {
+         width: 23% !important;
+     }
+
+     .left {
+         margin-left: -19.5% !important;
+         transition: 0.30s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+     }
+     .LeftNav .UlButton {
+         width: 50% !important;
+     }
+ }
+
+ /* ======================medi 992px===================== */
+ @media only screen and (max-width:950px) {
+     .LeftNav {
+         width: 25% !important;
+     }
+
+     .left {
+         margin-left: -24.5% !important;
+         transition: 0.30s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+     }
+
+     .LeftNav .menu button {
+         font-size: 13px !important;
+     }
+
+
+     .LeftNav .UlButton img {
+         padding: 6px !important;
+
+     }
+
+     .LeftNav .UlButton h4 {
+
+         font-size: 18px;
+
+     }
+ }
+
+
+ @media only screen and (max-width:740px) {
+     .LeftNav {
+         width: 30% !important;
+     }
+     .inbox{
+        font-size: 9px !important;
+        margin-left: 30% !important;
+    }
+
+     .left {
+         margin-left: -29.5% !important;
+         transition: 0.30s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+     }
+
+     .LeftNav .menu button {
+         font-size: 12px !important;
+         padding: 10px !important;
+     }
+
+     .LeftNav .tagname {
+         padding-top: 19px;
+     }
+
+     .LeftNav .tagsName h5 {
+         font-size: 10px !important;
+     }
+
+     .Help button {
+         font-size: 8px;
+         padding: 5px !important;
+         margin: 0 !important;
+
+     }
+
+     .Help p {
+         font-size: 8px !important;
+         margin: 0 !important;
+         margin-bottom: 5px !important;
+     }
+
+     .Help img {
+         width: 30px;
+         height: 30px;
+     }
+
+     .LeftNav .tagname {
+         padding-top: 14px !important;
+     }
+ }
+
+ @media only screen and (max-width:621px) {
+    .LeftNav {
+        width: 40% !important;
+    }
+    .left {
+        margin-left: -39.5% !important;
+        transition: 0.30s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+    .LeftNav .menu button {
+        font-size: 10px !important;
+        padding: 10px !important;
+    }
+
+    .LeftNav .UlButton {
+       padding-left: 10px !important;
+       margin-left: 10px !important;
+    }
+    .LeftNav .UlButton img {
+        padding: 5px !important;
+        background: #017EFA;
+        border-radius: 8px;
+    }
+   
+    .LeftNav .UlButton h4 {
+    font-size: 14px !important;
+   
+    }
+ }
+
+ /* ===================================================================== */
+
+ .LeftNav {
+     width: 23%;
+     background: #081A51;
+     height: 102vh;
+     overflow: scroll;
+     transition: 0.30s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+     flex-wrap: wrap;
+ }
+
+ .left {
+     margin-left: -22.5%;
+     transition: 0.30s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+ }
+
+ ::-webkit-scrollbar {
+     width: 3px !important;
+     height: 2px !important;
+ }
+
+ ::-webkit-scrollbar-thumb {
+     background: #040f31d0;
+     border-radius: 10px;
+ }
+
+ /* ===========================ULLLLBUTTON============================= */
+
+ .LeftNav .UlButton {
+     width: 88%;
+     display: flex;
+     align-items: center;
+     margin-left: 30px;
+     padding: 17px 0;
+     margin-bottom: 30px;
+ }
+
+ .LeftNav .UlButton img {
+     padding: 10px;
+     background: #017EFA;
+     border-radius: 8px;
+ }
+
+ .LeftNav .UlButton h4 {
+     color: white;
+     font-size: 20px;
+     font-weight: 800;
+     margin-left: 12px;
+     margin-top: -3px;
+
+ }
+
+
+ .LeftNav .menu {
+     width: 100%;
+     padding-left: 13px;
+     overflow: hidden !important;
+ }
+
+ .LeftNav .menu img {
+     margin-right: 12px;
+     width: 20px;
+     height: 20px;
+ }
+
+ /* ========================menu button====================== */
+
+ .LeftNav .menu button {
+     width: 99%;
+     padding: 15px;
+     display: flex;
+     align-items: center;
+     border: none;
+     outline: none;
+     color: white;
+     border-radius: 5px;
+     border-bottom-right-radius: 0px;
+     border-top-right-radius: 0px;
+     font-size: 16px;
+     font-weight: 500px;
+     background: transparent;
+ }
+
+ .LeftNav .menu button:hover {
+     background: #1b2b655d;
+ }
+ 
+.active{
+    background: #1b2b655d !important;
+}
+
+ /* =================tagname============== */
+ /* =================tagname============== */
+
+ .LeftNav .tagsName {
+     margin-left: 30px;
+ }
+
+ .LeftNav .tagsName h5 {
+     color: #51CBFF;
+     font-weight: 400;
+     font-size: 13px;
+     padding: 0;
+     margin-bottom: 6px;
+     text-transform: uppercase;
+ }
+
+
+ /* =================tagname============== */
+ .LeftNav .tagname {
+     width: 100%;
+     padding: 28px 0 6px 30px;
+     background: #1b2b6526;
+     margin: 6px 0;
+ }
+
+ .LeftNav .tagname h6 {
+     font-size: 13px;
+     font-weight: 400;
+     margin: 0;
+     padding: 0;
+     color: #51CBFF;
+ }

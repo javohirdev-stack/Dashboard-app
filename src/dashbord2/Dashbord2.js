@@ -7,6 +7,7 @@ import SummaryInfo from "./Chart2/SummaryInfo";
 import OrderTime from "./Chart2/OrderTIme";
 import Profiles from "./Chart2/Profiles";
 import SchedulaContent from "./SchedulaContent";
+import ContentReach from "./Chart2/ContentReach"
 
 const Dashbord2 = () => {
 
@@ -31,7 +32,7 @@ const Dashbord2 = () => {
 
                                     <div className="row">
                                         <div className="col-lg-10 col-md-10 right">
-
+                                        <ContentReach/>
                                         </div>
                                         <SummaryInfo />
                                     </div>

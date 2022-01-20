@@ -1,7 +1,7 @@
 import LeftNav from "./LeftNav";
 import '../style/DashBlok.css'
 import RightBlok from "./RightBlok";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Demograpic from "./Charts/Demograpic";
 import TopChanel from "./Charts/TopChannel";
 import ChartLine from "./Charts/ChartLine";
@@ -9,6 +9,9 @@ import ChartLineTop from "./Charts/ChartLineTop";
 
 const Dashboard1 = () => {
     const [toogle, setToogle] = useState(false)
+
+ 
+    const [dio, setDio] = useState(0)
     return (<>
 
 
@@ -24,8 +27,14 @@ const Dashboard1 = () => {
 
                             <div className="col-lg-12">
                                 <div className="demograp">
-                                    <ChartLineTop />
-                                    <ChartLine />
+                                    <ChartLineTop 
+                                    dio={dio}
+                                    setDio={setDio}
+                                    />
+                                    <ChartLine 
+                                      dio={dio}
+                                      setDio={setDio}
+                                    />
                                 </div>
                             </div>
 

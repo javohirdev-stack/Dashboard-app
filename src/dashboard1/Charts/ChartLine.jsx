@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Highcharts from 'highcharts';
 import {
     HighchartsChart, withHighcharts
@@ -8,12 +8,18 @@ import * as ChartModuleMore from 'highcharts/highcharts-more.js';
 ChartModuleMore(Highcharts);
 
 const ChartLine = (props) => {
-  
+
+
     const chart = {
         marginRight: 0,
+        loading: {
+            hideDuration: 5000
+        }
     }
-
-    const xAxis ={
+    const labels = {
+        style: { "background": "#000" }
+    }
+    const xAxis = {
         categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
         crosshair: true
     };
@@ -26,51 +32,61 @@ const ChartLine = (props) => {
     }]
     const plotOptions = {
         column: {
-            borderRadius: 5
+            borderRadius: 10,
+            color: 'red'
         }
     }
 
-   const series= [{
+    const series = [{
         name: 'Installation',
-        data: [1024, 2723, 3000, 3500, 4456, 3376, 2221, 3675, 6778, 5565, 8456, 7795]
+        data: [8024, 10723, 9000, 6500, 7456, 9376, 15221, 13675, 14778, 10565, 13456, 19795],
+        color: '#30D987'
     }, {
         name: 'Manufacturing',
-        data: [2467, 7865, 3765, 6043, 1234, 6532, 2045, 9876, 4678, 7765, 3456, 9895]
+        data: [10467, 11865, 13365, 10043, 12234, 9532, 8045, 6876, 10678, 9165, 8456, 9895],
+        color: '#017EFA'
     }, {
         name: 'Sales & Distribution',
-        data: [ 5865, 1765, 8043, 2234, 9532, 4045, 7876, 4567, 6678, 4765, 8456, 2895 ],
-        color: 'red'
+        data: [1200, 2765, 2043, 4234, 5332, 5945, 6586, 5567, 6878, 4005, 5856, 6995],
+        color: '#FD1F9B'
     }];
 
-    const chartooltip = {
-        shared: true,
-        pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f} ta</b><br/>'
-    }
-    const chartpane = {
-        size: '100%'
-    }
-    const legend = {
-    
-        enabled: false,
-    }
 
-    return (
-        <div style={{ width: '100%' }}>
 
-            <HighchartsChart
-                chart={chart}
-                series={series}
-                yAxis={yAxis}
-                xAxis={xAxis}
-                plotOptions={plotOptions}
-                tooltip={chartooltip}
-                pane={chartpane}
-                legend={legend}
-            >
-            </HighchartsChart>
 
-        </div>
-    );
+
+
+const chartooltip = {
+    shared: true,
+    pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f} ta</b><br/>',
+
+}
+const chartpane = {
+    size: '100%'
+}
+const legend = {
+
+    enabled: false,
+}
+
+return (
+    <div style={{ width: '100%' }}>
+
+        <HighchartsChart
+            chart={chart}
+            series={series}
+            yAxis={yAxis}
+            xAxis={xAxis}
+            plotOptions={plotOptions}
+            tooltip={chartooltip}
+            pane={chartpane}
+            legend={legend}
+            labels={labels}
+        >
+        </HighchartsChart>
+
+    </div>
+);
 
 }
 

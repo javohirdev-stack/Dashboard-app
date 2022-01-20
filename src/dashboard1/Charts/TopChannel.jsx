@@ -11,7 +11,7 @@ const TopChanel = () => {
                         <h2 >Top Channels</h2>
                     </div>
                     <div>
-                        <a href=""> See Dail</a>
+                    <a href=""> See Dail <i className="fas fa-chevron-right"></i></a>
                     </div>
                 </div>
 

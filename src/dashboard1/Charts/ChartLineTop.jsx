@@ -1,6 +1,6 @@
 import './ChartStyle/ChartLineTop.css'
 
-const ChartLineTop = ({ dash2 }) => {
+const ChartLineTop = ({ dash2, dio, setDio }) => {
     return (<>
 
         <div className="ChartTop">
@@ -50,10 +50,9 @@ const ChartLineTop = ({ dash2 }) => {
                     </div>
 
                     <div className='menu'>
-                        <button>Daily</button>
-                        <button>Weekly</button>
-                        <button>Month</button>
-
+                        <button onClick={()=> localStorage.setItem('son', 0)}>Daily</button>
+                        <button onClick={()=> localStorage.setItem('son', 1)}>Weekly</button>
+                        <button onClick={()=> localStorage.setItem('son', 2)}>Month</button>
                     </div>
                 </>
             }

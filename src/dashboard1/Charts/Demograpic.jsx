@@ -1,5 +1,6 @@
 
 import './ChartStyle/Demograpic.css'
+import RoundInfo from './RoundInfo';
 const Demograpic = () => {
 
     return (<>
@@ -12,12 +13,15 @@ const Demograpic = () => {
                             <h2 >Demographic</h2>
                         </div>
                         <div>
-                            <a href=""> See Dail</a>
+                            <a href=""> See Dail <i className="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
                     <div className=" demo"></div>
+                    <div className="col-lg-6">
+                        <RoundInfo />
+                    </div>
 
-                    <div className="col-lg-7">
+                    <div className="col-lg-6">
                         <div className='auther'>
                             <div>
                                 <h5>Audience Age</h5>
@@ -36,21 +40,21 @@ const Demograpic = () => {
                                 <span>27%</span>
                             </div>
                             <div className='d-flex justify-content-between'>
-                                <div style={{background: '#017EFA'}}  className='reds'></div>
+                                <div style={{ background: '#017EFA' }} className='reds'></div>
                                 <p> 20 - 35 years old</p>
                                 <b> 64K</b>
                                 <span>40%</span>
                             </div>
 
                             <div className='d-flex justify-content-between'>
-                                <div  style={{background: '#30D987'}}  className='reds'></div>
+                                <div style={{ background: '#30D987' }} className='reds'></div>
                                 <p> 40 - 50 years old</p>
                                 <b> 18K</b>
                                 <span>16%</span>
                             </div>
 
-                            <div   className='d-flex justify-content-between'>
-                                <div style={{background: '#6342FF'}}  className='reds'></div>
+                            <div className='d-flex justify-content-between'>
+                                <div style={{ background: '#6342FF' }} className='reds'></div>
                                 <p> 40 - 50 years old</p>
                                 <b> 5K</b>
                                 <span>8%</span>
@@ -61,7 +65,7 @@ const Demograpic = () => {
                 </div>
             </div>
         </div>
-        
+
     </>);
 }
 export default Demograpic;

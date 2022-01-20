@@ -12,18 +12,20 @@
  }
 
 
-.inbox{
-    padding: 0px 6px;
-    background: #CF3A59;
-    border-radius: 2px;
-    font-size: 11px;
-    margin-bottom: -3px;
-    margin-left: 45%;
-}
+ .inbox {
+     padding: 0px 6px;
+     background: #CF3A59;
+     border-radius: 2px;
+     font-size: 11px;
+     margin-bottom: -3px;
+     margin-left: 45%;
+ }
 
- /* ================================================================== */
 
- @media only screen and (max-width:1200px) {
+ /* ==================================Media=============================== */
+
+
+ @media (max-width:1200px) {
 
 
      .LeftNav {
@@ -31,24 +33,55 @@
      }
 
      .left {
-         margin-left: -19.5% !important;
+         margin-left: -23% !important;
          transition: 0.30s cubic-bezier(0.445, 0.05, 0.55, 0.95);
      }
+
      .LeftNav .UlButton {
          width: 50% !important;
+     }
+
+     .toogle {
+         width: 35px;
+         height: 35px;
+         margin-left: 0;
+     }
+
+ }
+
+ @media (max-width:1160px) {
+     .LeftNav {
+         width: 30%;
+         position: absolute;
+         top: 10.8%;
+         height: 89vh !important;
+         overflow: scroll;
+         z-index: 2000;
+         margin-left: -30%;
+     }
+
+     .left {
+         margin-left: 0% !important;
+         transition: 0.30s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+     }
+
+     .toogle {
+         width: 30px;
+         height: 30px;
+         margin-left: 0;
      }
  }
 
  /* ======================medi 992px===================== */
  @media only screen and (max-width:950px) {
-     .LeftNav {
+     /* .LeftNav {
          width: 25% !important;
      }
 
      .left {
-         margin-left: -24.5% !important;
+         margin-left: -25% !important;
          transition: 0.30s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-     }
+     } */
 
      .LeftNav .menu button {
          font-size: 13px !important;
@@ -65,22 +98,37 @@
          font-size: 18px;
 
      }
+
+     .toogle {
+         width: 30px;
+         height: 30px;
+         margin-left: 0;
+     }
+ }
+
+ @media only screen and (max-width:900px) {
+  .LeftNav{
+      margin-top: -0.6% !important;
+  } 
+
+ }
+
+ @media only screen and (max-width:756px) {
+     .LeftNav{
+         margin-top: -1% !important;
+     }
  }
 
 
+ /* ==============medi 776px ================ */
  @media only screen and (max-width:740px) {
-     .LeftNav {
-         width: 30% !important;
-     }
-     .inbox{
-        font-size: 9px !important;
-        margin-left: 30% !important;
-    }
 
-     .left {
-         margin-left: -29.5% !important;
-         transition: 0.30s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+     .inbox {
+         font-size: 9px !important;
+         margin-left: 30% !important;
      }
+
 
      .LeftNav .menu button {
          font-size: 12px !important;
@@ -118,36 +166,61 @@
      }
  }
 
+ /* ==================media 621px================ */
  @media only screen and (max-width:621px) {
-    .LeftNav {
-        width: 40% !important;
-    }
-    .left {
-        margin-left: -39.5% !important;
-        transition: 0.30s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    }
-    .LeftNav .menu button {
-        font-size: 10px !important;
-        padding: 10px !important;
-    }
+     /* .LeftNav {
+         width: 40% !important;
+     }
 
-    .LeftNav .UlButton {
-       padding-left: 10px !important;
-       margin-left: 10px !important;
-    }
-    .LeftNav .UlButton img {
-        padding: 5px !important;
-        background: #017EFA;
-        border-radius: 8px;
-    }
-   
-    .LeftNav .UlButton h4 {
-    font-size: 14px !important;
-   
-    }
+     .left {
+         margin-left: -39.5% !important;
+         transition: 0.30s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+     } */
+
+     .LeftNav .menu button {
+         font-size: 10px !important;
+         padding: 10px !important;
+     }
+
+     .LeftNav .UlButton {
+         padding-left: 10px !important;
+         margin-left: 10px !important;
+     }
+
+     .LeftNav .UlButton img {
+         padding: 5px !important;
+         background: #017EFA;
+         border-radius: 8px;
+     }
+
+     .LeftNav .UlButton h4 {
+         font-size: 14px !important;
+
+     }
  }
 
- /* ===================================================================== */
+ @media (max-width:540px) {
+     .LeftNav {
+         top: 10.4% !important;
+         width: 30% !important;
+     }
+
+
+     /* .left {
+        margin-left: -29.5% !important;
+        transition: 0.30s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    } */
+     .toogle {
+         width: 30px;
+         height: 30px;
+         margin-left: 0;
+     }
+ }
+
+
+ /* ==================================Media=============================== */
+
+
 
  .LeftNav {
      width: 23%;
@@ -159,7 +232,7 @@
  }
 
  .left {
-     margin-left: -22.5%;
+     margin-left: -23%;
      transition: 0.30s cubic-bezier(0.445, 0.05, 0.55, 0.95);
  }
 
@@ -233,10 +306,10 @@
  .LeftNav .menu button:hover {
      background: #1b2b655d;
  }
- 
-.active{
-    background: #1b2b655d !important;
-}
+
+ .active {
+     background: #1b2b655d !important;
+ }
 
  /* =================tagname============== */
  /* =================tagname============== */

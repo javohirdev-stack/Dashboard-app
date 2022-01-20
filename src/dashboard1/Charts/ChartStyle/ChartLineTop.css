@@ -1,0 +1,96 @@
+.ChartTop {
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ChartTop .Kinfo {
+    display: flex;
+    align-items: center;
+
+}
+
+.ChartTop .Kinfo img {
+    width: 3rem;
+}
+
+.ChartTop .Kinfo .Kins {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    padding-top: 5px;
+    box-sizing: border-box !important;
+}
+
+.ChartTop .Kinfo .Kins b {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #1C1F37;
+    margin: 0;
+    padding: 0 !important   ;
+
+}
+
+.ChartTop .Kinfo .Kins small {
+   font-size: 0.8rem;
+    font-weight: 400;
+    color: #A9ABB0;
+    padding: 0;
+}
+
+.ChartTop .menu {
+    padding: 3px;
+    background: #F5F7FB;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.ChartTop .menu button {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    font-size: 0.8rem;
+    color: #A9ABB0;
+    transition: 0.20s ease-in;
+    margin: 0 2px;
+}
+
+.ChartTop .menu button:hover {
+    background: #fff;
+}
+.ChartTop .menu button:nth-child(1) {
+    background: #fff;
+    border: none;
+    outline: none;
+
+}
+
+@media only screen and (max-width:850px){
+
+    .ChartTop {
+        padding: 0 10px;
+    }
+    .ChartTop .Kinfo img {
+        width: 2rem;
+    }
+    .ChartTop .Kinfo .Kins b {
+        font-size: 1.3rem;
+    }
+    .ChartTop .Kinfo .Kins small {
+        font-size: 0.7rem;
+    }
+    .ChartTop .menu button {
+        font-size: 0.7rem;
+        padding: 5px;
+    }
+    .ChartTop .Kinfo .kk{
+        margin: 0 5px !important;
+    }
+
+}

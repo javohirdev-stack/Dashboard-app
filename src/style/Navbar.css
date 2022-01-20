@@ -25,7 +25,7 @@
     align-items: center !important;
 }
 
-.header .infoAvatar .art{
+.header .infoAvatar .art {
     width: 0px;
     border-right: 1px solid #828282;
     height: 27px;
@@ -33,6 +33,7 @@
     margin: 0 10px;
     border-radius: 0px;
 }
+
 .header .infoAvatar span {
     background: #F5F7FB !important;
     padding: 4px 4px;
@@ -42,14 +43,15 @@
     margin-right: 5px;
 }
 
-.header .infoAvatar span .fas{
+.header .infoAvatar span .fas {
     background: none;
     padding: 0;
     color: #828282;
- 
-    
+
+
 }
-.header .infoAvatar span input{
+
+.header .infoAvatar span input {
     background: transparent;
     border: none;
     outline: none;
@@ -111,13 +113,14 @@
     cursor: pointer;
     z-index: 1000;
     border: 1px solid gray;
-    margin-left: -15px;
+    margin-left: -18px;
     margin-top: 20px;
     transition: 0.30s ease-in-out;
+    padding-top: 4px;
 }
 
 .line {
-    padding-right: 30px;
+   margin-left: 2px;
     transition: 0.30s ease-in-out;
     transform: rotateY(180deg);
 }
@@ -132,25 +135,172 @@
     font-size: 17px;
 }
 
+
+
+/* ========================================nav3 style========================================= */
+
+.header .nav3style {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav3style img {
+    margin-right: 10px;
+    margin-top: 0;
+}
+
+.header .nav3style h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+.header .nav3style .linia {
+    height: 35px;
+    border-right: 1px solid #828282;
+    margin-left: 15px;
+
+}
+
+.header .nav3style .nav3 {
+    margin-left: 15px;
+    transform: translateY(8px) rotate(-90deg);
+}
+
+.header .nav3style .nav3search {
+    margin-left: 20px;
+}
+
+.header .nav3style .nav3search input {
+    background: none;
+    border: none;
+    outline: none;
+    color: #828282;
+}
+
+.header .nav3style .nav3search .fas {
+    margin-right: 10px;
+    color: #828282;
+}
+
+.header .follower{
+    display: flex ;
+    align-items: center;
+}
+.header .follower h6 {
+    color:#30D988;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+.header .follower h6 span {
+    display: block;
+   width: 5px;
+   height: 5px;
+   background: #30D988;
+   margin-right: 7px;
+   border-radius: 50%;
+}
+.header .follower .profile{
+    display: flex;
+    align-items: center;
+}
+.header .follower .profile img{
+    width: 35px;
+    height: 35px;
+   margin-left: -15px;
+    top: 0;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.header .follower .sing{
+    margin-left: 10px;
+    border-left: 1px solid #828282;
+    padding-left: 10px;
+}
+.header .follower .sing .far{
+    background: #fff;
+}
+
+
+@media (max-width:1160px){
+   
+    .toogle {
+
+       margin-left: 1px;
+       transform: rotateY(-180deg);
+    
+   }
+   .line {
+       margin-left: 2px;
+        transition: 0.30s ease-in-out;
+        transform: rotateY(0deg);
+    }
+    .navs{
+        padding: 19px 30px !important;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .header .nav3style img {
+        margin-right: 10px;
+        width: 30px;
+    }
+
+    .navs{
+        padding: 17px 30px !important;
+    }
+}
+
+
+
 @media only screen and (max-width:756px) {
     .header nav h1 {
         font-size: 20px;
-
     }
 
     .header nav {
         padding: 20px 10px;
     }
-
+    .navs{
+        padding: 17px 15px !important;
+    }
     .toogle {
         width: 25px;
         height: 25px;
         margin-left: -10px;
     }
+
+    .header .follower .profile img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header .nav3style h6 {
+        font-size: 12px;
+    }
+    .header .nav3style span {
+        font-size: 11px;
+    }
+
+    .header .follower h6 {
+        font-size: 12px;
+        margin-bottom: -3px;
+    }
+
+    .header .nav3style .nav3search input {
+        width: 100px;
+    }
+
+    .header .nav3style .linia {
+        height: 26px;
+    }
     .line {
         padding-right: 16px;
-     
+
     }
+
     .header .infoAvatar .fas {
         font-size: 10px;
         margin: 0;
@@ -160,12 +310,67 @@
         font-size: 10px;
 
     }
+
     .header .infoAvatar img {
         margin: 0 15px;
         width: 25px;
         height: 25px;
     }
+
     .header .infoAvatar h6 {
-       font-size: 10px;
+        font-size: 10px;
     }
+}
+
+
+@media (max-width:740px) {
+    .toogle {
+        margin-left: -1px !important;
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .header nav {
+        width: 95% !important;
+    }
+
+    .drop .fas {
+        background: none !important;
+        font-size: 15px;
+        transform: translateX(0px);
+    }
+
+    .header .infoAvatar span {
+        background: #F5F7FB !important;
+        padding: 4px 4px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        margin-right: 5px;
+    }
+
+
+    .header .infoAvatar span input {
+        width: 70px;
+        font-size: 8px;
+        margin: 0;
+    }
+
+}
+
+@media (max-width:576px){
+    .header .follower .profile img {
+        width: 24px;
+        height: 24px;
+    }
+    .header .nav3style span {
+        font-size: 8px;
+    }
+    .header .nav3style h6 {
+        font-size: 9px;
+        margin: 0;
+        padding: 0;
+    }
+    
 }

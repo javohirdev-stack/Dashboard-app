@@ -1,0 +1,52 @@
+.summarInfo{
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    background: #F5F7FB;
+    border-radius: 6px;
+}
+.summarInfo h3{
+    color: 
+    #1C1F37;
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin: 0;
+}
+.summarInfo span{
+    font-size: 0.8rem;
+    color: rgba(28, 31, 55, 0.58);
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+}
+.summarInfo span i{
+  width: 8px;
+  height: 8px;
+  background: #30D988;
+  display: inline-block;
+  border-radius: 10px;
+  margin-right:6px ;
+}
+.summarInfo .bottom{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.055);
+    padding: 10px 0;
+}
+
+.summarText{
+    display: flex;
+    flex-wrap: wrap;
+}
+.summarText img{
+    margin-top: 13px;
+}
+.summarText h4{
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #000;
+    margin: 10px 0;
+}
+.summarText p{
+    font-size: 0.7rem;
+    font-weight: 400;
+}

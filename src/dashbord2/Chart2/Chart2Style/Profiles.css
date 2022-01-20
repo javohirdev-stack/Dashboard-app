@@ -1,0 +1,39 @@
+.Profiles{
+    display: flex;
+    flex-direction: column;
+
+}
+.Profiles .avatarLink{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.Profiles .avatarLink img {
+    width: 30px;
+}
+
+.Profiles .avatarLink h5{
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+.Profiles .avatarLink span{
+    font-size: 0.7rem;
+    color: #1C1F37;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.avatarLink span i{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #51CBFF;
+    border-radius: 10px;
+    margin: 0 8px;
+
+}

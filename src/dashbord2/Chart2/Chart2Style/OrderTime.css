@@ -1,0 +1,27 @@
+
+
+.Order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Order h5{
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+.Order span{
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.Order button{
+    padding: 4px 10px;
+    border: none;
+    outline: none;
+    background: #F2F4FD;
+    font-size: 0.7rem;
+    border-radius: 6px;
+    color: #017EFA;
+}

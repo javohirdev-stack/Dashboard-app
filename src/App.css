@@ -9,10 +9,11 @@
   transition: 0.40s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-.TopNav:hover .up{
+.TopNav:hover .up {
   margin-bottom: -15px;
   transform: translateY(15px);
 }
+
 @media (max-width:992px) {
   .TopNav {
     left: 35%;
@@ -26,27 +27,30 @@
     margin-top: 2%;
     padding: 10px 10px 5px 10px;
   }
-  
+
 }
 
 @media (max-width:576px) {
+
   .TopNav {
     left: 28%;
+    top: -84px;
     width: 200px;
-   top: -11%;
   }
-  .TopNav button{
+
+  .TopNav button {
     width: 33%;
-   
+
   }
 
 }
 
 
 
-.UP{
+.UP {
   top: 0%;
 }
+
 .TopNav .up {
   display: block;
   width: 100%;

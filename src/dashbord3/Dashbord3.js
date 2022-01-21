@@ -108,9 +108,9 @@ const Dashbord3 = () => {
                                 <div className=" d-flex bg-transparent justify-content-between align-items-end demograp">
                                     <div>
                                         <h3 style={{ fontSize: '1.2rem' }}>Audience VIsitor</h3>
-                                        <div className="d-flex ">
+                                        <div className="d-flex but">
                                             <b style={{ border: '1px solid gray', padding: '2px 5px', borderRadius: '6px', marginRight: '5px' }}> <img src="./image/round1.png" alt="" /> Male (234k)</b>
-                                            <b style={{ border: '1px solid gray', padding: '2px 5px', borderRadius: '6px', }}>FeMale (254k)</b>
+                                            <b style={{ border: '1px solid gray', padding: '2px 5px', borderRadius: '6px', }}><img src="./image/dec.png" alt="" />FeMale (254k)</b>
                                         </div>
                                     </div>
 

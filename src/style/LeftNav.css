@@ -113,6 +113,31 @@
 
  }
 
+ @media (min-height:770px) {
+     .LeftNav {
+         top: 10% !important;
+
+     }
+ }
+
+ @media (min-height:750px) {
+     .LeftNav {
+         top: 9.9% !important;
+         height: 100%;
+     }
+
+
+     /* .left {
+       margin-left: -29.5% !important;
+       transition: 0.30s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+   } */
+     .toogle {
+         width: 30px;
+         height: 30px;
+         margin-left: 0;
+     }
+ }
+
  @media only screen and (max-width:756px) {
      .LeftNav {
          margin-top: -1% !important;
@@ -201,9 +226,11 @@
 
  @media (max-width:540px) {
      .LeftNav {
-         top: 10.4% !important;
+         top: 10.2% !important;
          width: 35% !important;
          margin-left: -35%;
+         height: 100%;
+
      }
 
      .left {
@@ -225,12 +252,9 @@
      }
  }
 
- @media (min-height:705px){
-    .LeftNav {
-        top: 10% !important;
-      
-    }
- }
+
+
+
 
  /* ==================================Media=============================== */
 
@@ -315,6 +339,7 @@
      font-size: 16px;
      font-weight: 500px;
      background: transparent;
+     cursor: pointer;
  }
 
  .LeftNav .menu button:hover {

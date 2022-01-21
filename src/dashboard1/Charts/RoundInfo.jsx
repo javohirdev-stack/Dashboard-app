@@ -7,23 +7,27 @@ const RoundInfo = () => {
     const options = {
         colors: ['#017EFA', '#30D987', '#6342FF', '#B37CD2'],
         chart: {
+        
             type: 'pie',
-            height:['240px'],
+            height: ['240px'],
             // margin:[0, 0, 0, 0]
         },
-  
+
+
+        title: {
+            text: ''
+        },
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
         },
         plotOptions: {
-            type: 'variablepie'
+            type: 'Female'
         },
-        legend : {
-
-            enabled: false,
+        legend: {
+            enable: true,
         },
         series: [{
-            name: 'Registrations',
+            name: 'F',
             colorByPoint: true,
             innerSize: '50%',
             data: [{
@@ -39,7 +43,7 @@ const RoundInfo = () => {
         }]
     }
     return (<>
-    <HighchartsReact
+        <HighchartsReact
             highcharts={Highcharts}
             options={options}
         />

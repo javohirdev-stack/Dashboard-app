@@ -59,6 +59,7 @@
     color: #A9ABB0;
     transition: 0.20s ease-in;
     margin: 0 2px;
+    cursor: pointer;
 }
 
 .ChartTop .menu button:hover {

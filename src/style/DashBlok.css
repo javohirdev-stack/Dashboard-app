@@ -17,72 +17,95 @@
     padding: 15px;
 }
 
+@media only screen and (max-width:576px) {
+
+    .DashBlok .dashbord .Dashbord_table {
+
+        padding: 0;
+    }
+
+    .but b{
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 2px 2px !important;
+    }
+}
+
 .right {
     border-right: 1px solid rgba(175, 173, 173, 0.411);
 }
 
-.Title h3{
+.Title h3 {
     font-size: 2rem;
     font-weight: 700;
 }
-.Title p{
+
+.Title p {
     font-size: 1rem;
     font-weight: 600;
-    color:#6F6F6F ;
+    color: #6F6F6F;
 }
 
 .d3name h5 {
     font-size: 2rem !important;
     font-weight: 900;
 }
-.d3name img{
+
+.d3name img {
     width: 15px;
     padding: 3px;
     border-radius: 50%;
-    background: 
-    #51cbff80;
+    background:
+        #51cbff80;
 }
-.d3name span{
+
+.d3name span {
     font-size: 0.8rem;
-    color:  rgba(28, 31, 55, 0.58);
+    color: rgba(28, 31, 55, 0.58);
 }
+
 .d3name h5 span {
     font-size: 0.6rem;
-    color: 
-    #30D988;
+    color:
+        #30D988;
 }
-.d3name small{
+
+.d3name small {
     margin-bottom: -12px;
     margin-left: 2px;
     color: rgba(28, 31, 55, 0.58);
     margin-right: 20px;
 }
 
-.svDown button{
+.svDown button {
     padding: 5px 15px;
     background: #F2F4FD;
-   border-radius: 6px;
+    border-radius: 6px;
     border: none;
     outline: none;
     font-size: 1rem;
     font-weight: 600;
 }
 
-@media (max-width:576px){
-    .d3name{
+@media (max-width:576px) {
+    .d3name {
         flex-wrap: wrap !important;
     }
-    .d3name h5{
+
+    .d3name h5 {
         font-size: 1rem !important;
     }
-    .svDown button{
+
+    .svDown button {
         font-size: 1rem;
         margin: 10px auto;
     }
-    .boxs{
+
+    .boxs {
         justify-content: center !important;
     }
 }
-.boxs{
+
+.boxs {
     box-shadow: 0, 0, 50px, 20px gray !important;
 }

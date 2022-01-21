@@ -36,19 +36,19 @@ const Visitor = (props) => {
 
     const series = [{
         name: 'Sales & Distribution',
-        
         data: [10467, 11865, 13365, 5043, 4234, 9532, 8045, 6876, 10678, 9165, 8456, 9895],
         color: '#FD1F9B',
-         
         borderRadius: '50%'
     }, {
         name: 'Manufacturing',
         data: [6065, 6765, 7043, 7534, 7032, 7745, 8876, 8567, 9678, 9765, 10456, 9895],
-        type: 'area',
+        type:'area',
+        gapSize: 5,
+        tooltip: {
+            valueDecimals: 2
+        },
+        
         color: '#017EFA',
-        borderRadius: '50%',
-        clip:true,
-        colorAxis: 'blue' ,
         fillColor: {
             linearGradient: {
                 x1: 0,

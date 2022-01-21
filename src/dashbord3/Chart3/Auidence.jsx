@@ -5,13 +5,25 @@ import HighchartsReact from 'highcharts-react-official'
 const options = {
     chart: {
         type: 'column',
-        backgroundColor: 'transparent'
+        backgroundColor: 'transparent',
+        height:'250px'
     },
 
     title: {
-        text: 'Styling axes and columns'
+        text: ''
     },
+      xAxis:{
+        crosshair:{
+            className:undefined,
+            color:'#fff',
+            dashStyle: 'solid',
+            snap:false,
+            width:'80px',
+            zIndex:2,
+            
+            }
 
+      },
     yAxis: [{
         className: 'highcharts-color-0',
         title: {

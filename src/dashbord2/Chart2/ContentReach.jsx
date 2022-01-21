@@ -91,7 +91,7 @@ const ContentReach = (props) => {
 
 
     return (
-        <div style={{ width: '100%', background: 'transparent' }}>
+        <div style={{ background: 'transparent' }}>
 
             <HighchartsChart
                 chart={chart}

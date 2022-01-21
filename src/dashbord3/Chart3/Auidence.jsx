@@ -42,10 +42,14 @@ const options = {
 
 const Audence = () => {
     return (<>
-        <HighchartsReact
+    <div style={{width:'100%'}}>
+
+              <HighchartsReact
             highcharts={Highcharts}
             options={options}
         />
+    </div>
+  
     </>);
 }
 export default Audence;

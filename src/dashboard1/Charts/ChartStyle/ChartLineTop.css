@@ -94,3 +94,20 @@
     }
 
 }
+
+@media only screen and (max-width:500px){
+    .ChartTop {
+        padding: 0 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .ChartTop .Kinfo img {
+        width: 30px;
+    }
+    .ChartTop .Kinfo .Kins small {
+        font-size: 0.5rem;
+    }
+    .ChartTop .menu{
+        margin-top: 10px;
+    }
+}

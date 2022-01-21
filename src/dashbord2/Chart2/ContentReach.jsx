@@ -9,15 +9,23 @@ import * as ChartModuleMore from 'highcharts/highcharts-more.js';
 ChartModuleMore(Highcharts);
 
 const ContentReach = (props) => {
-  
+
     const chart = {
         marginRight: 0,
-        backgroundColor: 'transparent'
+        backgroundColor: 'transparent',
+        type: 'spline'
     }
 
-    const xAxis ={
+    const xAxis = {
         categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-        crosshair: true
+        crosshair: true,
+        
+        backgroundColor: {
+            linearGradient: {
+              x1: 0,
+              x2: 1,
+            },
+        },
     };
 
     const yAxis = [{
@@ -32,41 +40,58 @@ const ContentReach = (props) => {
         }
     }
 
-   const series= [{
-        name: 'Installation',
-        data: [8024, 10723, 9000, 4500, 5456, 5376, 15221, 13675, 14778, 10565, 13456, 19795],
-        color: '#30D987',
+
+
+    const series = [{
+        name: 'Sales & Distribution',
+        
+        data: [10467, 11865, 13365, 5043, 4234, 9532, 8045, 6876, 10678, 9165, 8456, 9895],
+        color: '#FD1F9B',
+         
         borderRadius: '50%'
     }, {
         name: 'Manufacturing',
-        data: [10467, 11865, 13365, 5043, 4234, 9532, 8045, 6876, 10678, 9165, 8456, 9895],
+        data: [6065, 6765, 7043, 7534, 7032, 7745, 8876, 8567, 9678, 9765, 10456, 9895],
+        type: 'area',
         color: '#017EFA',
-        borderRadius: '50%'
-    }, {
-        name: 'Sales & Distribution',
-        data: [ 1065, 1765, 3043, 2234, 5532, 3045, 6876, 4567, 3678, 6765, 5456, 2895 ],
-        color: '#FD1F9B',
-        borderRadius: '50%'
+        borderRadius: '50%',
+        clip:true,
+        colorAxis: 'blue' ,
+        fillColor: {
+            linearGradient: {
+                x1: 0,
+                y1: 0,
+                x2: 0,
+                y2: 1
+            },
+            stops: [
+                [0, Highcharts.getOptions().colors[0]],
+                [1, Highcharts.color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+            ]
+
+
+        },
+        threshold: null
     }];
 
     const chartooltip = {
         shared: true,
         pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f} ta</b><br/>',
-        
+
     }
     const chartpane = {
         size: '100%',
-        backgroundColor:'transparent'
+        backgroundColor: 'transparent'
     }
     const legend = {
-    
+
         enabled: false,
     }
 
-   
+
 
     return (
-        <div style={{ width: '100%', background:'transparent'}}>
+        <div style={{ width: '100%', background: 'transparent' }}>
 
             <HighchartsChart
                 chart={chart}

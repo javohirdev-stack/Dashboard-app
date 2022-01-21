@@ -12,7 +12,8 @@ const Visitor = (props) => {
   
     const chart = {
         marginRight: 0,
-        backgroundColor: 'transparent'
+        backgroundColor: 'transparent',
+        height:'290px'
     }
 
     const xAxis ={
@@ -32,21 +33,37 @@ const Visitor = (props) => {
         }
     }
 
-   const series= [{
-        name: 'Installation',
-        data: [8024, 10723, 9000, 4500, 5456, 5376, 15221, 13675, 14778, 10565, 13456, 19795],
-        color: '#30D987',
+
+    const series = [{
+        name: 'Sales & Distribution',
+        
+        data: [10467, 11865, 13365, 5043, 4234, 9532, 8045, 6876, 10678, 9165, 8456, 9895],
+        color: '#FD1F9B',
+         
         borderRadius: '50%'
     }, {
         name: 'Manufacturing',
-        data: [10467, 11865, 13365, 5043, 4234, 9532, 8045, 6876, 10678, 9165, 8456, 9895],
+        data: [6065, 6765, 7043, 7534, 7032, 7745, 8876, 8567, 9678, 9765, 10456, 9895],
+        type: 'area',
         color: '#017EFA',
-        borderRadius: '50%'
-    }, {
-        name: 'Sales & Distribution',
-        data: [ 1065, 1765, 3043, 2234, 5532, 3045, 6876, 4567, 3678, 6765, 5456, 2895 ],
-        color: '#FD1F9B',
-        borderRadius: '50%'
+        borderRadius: '50%',
+        clip:true,
+        colorAxis: 'blue' ,
+        fillColor: {
+            linearGradient: {
+                x1: 0,
+                y1: 0,
+                x2: 0,
+                y2: 1
+            },
+            stops: [
+                [0, Highcharts.getOptions().colors[0]],
+                [1, Highcharts.color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+            ]
+
+
+        },
+        threshold: null
     }];
 
     const chartooltip = {

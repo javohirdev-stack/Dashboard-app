@@ -3,7 +3,7 @@ import './ChartStyle/TopChanel.css'
 const TopChanel = () => {
     return (<>
 
-        <div className="col-lg-4">
+        <div className="col-lg-4 col-md-4">
             <div className="demograp pb-4">
                 <div className="d-flex align-items-center justify-content-between ">
                     <div className='d-flex align-items-center  pt-2 pb-2'>

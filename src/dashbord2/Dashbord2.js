@@ -8,6 +8,7 @@ import OrderTime from "./Chart2/OrderTIme";
 import Profiles from "./Chart2/Profiles";
 import SchedulaContent from "./SchedulaContent";
 import ContentReach from "./Chart2/ContentReach"
+import RoundInfo from "../dashboard1/Charts/RoundInfo";
 
 const Dashbord2 = () => {
 
@@ -41,7 +42,7 @@ const Dashbord2 = () => {
                                 <SchedulaContent/>
                             </div> 
 
-                            <div className="col-lg-3 col-10 mx-auto">
+                            <div className="col-lg-3 col-12 mx-auto">
 
                                 <div className="demograp">
                                     <div className="d-flex align-items-center justify-content-between">
@@ -52,6 +53,7 @@ const Dashbord2 = () => {
 
                                     </div>
 
+                                     <RoundInfo/>
                                     <div className=" demo"></div>
                                     <OrderTime />
 

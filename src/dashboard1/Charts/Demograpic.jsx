@@ -4,7 +4,7 @@ import RoundInfo from './RoundInfo';
 const Demograpic = () => {
 
     return (<>
-        <div className="col-lg-8">
+        <div className="col-lg-8 col-md-8">
             <div className="demograp">
                 <div className="row">
                     <div className="col-lg-12 d-flex align-items-center justify-content-between ">
@@ -17,11 +17,11 @@ const Demograpic = () => {
                         </div>
                     </div>
                     <div className=" demo"></div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-5">
                         <RoundInfo />
                     </div>
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-7">
                         <div className='auther'>
                             <div>
                                 <h5>Audience Age</h5>

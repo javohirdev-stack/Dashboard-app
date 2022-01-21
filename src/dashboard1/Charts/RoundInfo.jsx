@@ -5,10 +5,11 @@ import HighchartsReact from 'highcharts-react-official'
 const RoundInfo = () => {
 
     const options = {
-        colors: ['#017EFA', '#71BF45', '#FAA74B', '#B37CD2'],
+        colors: ['#017EFA', '#30D987', '#6342FF', '#B37CD2'],
         chart: {
             type: 'pie',
-          
+            height:['240px'],
+            // margin:[0, 0, 0, 0]
         },
   
         tooltip: {
@@ -24,20 +25,17 @@ const RoundInfo = () => {
         series: [{
             name: 'Registrations',
             colorByPoint: true,
-            innerSize: '30%',
+            innerSize: '50%',
             data: [{
-                name: 'EV',
+                name: '67%',
                 y: 68.1,
             }, {
-                name: 'Hybrids',
+                name: '12%',
                 y: 11.0
             }, {
-                name: 'Diesel',
+                name: '17%',
                 y: 11.2
-            }, {
-                name: 'Petrol',
-                y: 9.7
-            }]
+            }],
         }]
     }
     return (<>

@@ -1,37 +1,50 @@
-.demograp{
+.demograp {
     width: 100%;
     padding: 16px;
-    background: #fff ;
+    background: #fff;
     border-radius: 8px;
     margin: 20px 0;
+    animation: 2s skew cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.demo{
-    margin:20px auto;
+
+@keyframes skew{
+    0%{
+        transform: skew(20deg) scale(0.6);
+        perspective: 2000px;
+    }
+    100%{
+        transform: skew(0deg) scale(1);
+    }
+}
+
+.demo {
+    margin: 20px auto;
     width: 98%;
-    
+
     border-bottom: 0.7px solid #DADADA !important;
     display: block;
 }
 
-.demograp h2{
+.demograp h2 {
     font-size: 1.2rem;
     font-weight: 700;
     color: #1C1F37;
     margin-left: 20px;
 }
 
-.demograp h5{
+.demograp h5 {
     font-size: 1.3rem;
     font-weight: 700;
     color: #1C1F37;
     margin-bottom: 20px;
 }
 
-.demograp a{
- font-size: 1rem;
- font-weight: 600;
+.demograp a {
+    font-size: 1rem;
+    font-weight: 600;
 }
-.demograp .auther{
+
+.demograp .auther {
     width: 100%;
     background: #FAFAFA;
     display: flex;
@@ -40,44 +53,50 @@
     border-radius: 12px;
 }
 
-.demograp .auther .colr{
-   width: 100%;
+.demograp .auther .colr {
+    width: 100%;
     display: flex;
-   margin-bottom: 20px;
-   animation: anis 0.70s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin-bottom: 20px;
+    animation: anis 0.70s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-@keyframes anis{
-    0%{
-        width:0%;
+@keyframes anis {
+    0% {
+        width: 0%;
     }
-    100%{
+
+    100% {
         width: 100%;
     }
 }
-.demograp .auther .colr .color{
+
+.demograp .auther .colr .color {
     width: 25%;
     height: 10px;
     border-radius: 10px;
     background: red;
 }
-.demograp .auther .colr .color:nth-child(1){
+
+.demograp .auther .colr .color:nth-child(1) {
     width: 27%;
     background: #FD1F9B;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
-.demograp .auther .colr .color:nth-child(2){
+
+.demograp .auther .colr .color:nth-child(2) {
     width: 40%;
     background: #017EFA;
     border-radius: 0px;
 }
-.demograp .auther .colr .color:nth-child(3){
+
+.demograp .auther .colr .color:nth-child(3) {
     width: 25%;
     background: #30D987;
     border-radius: 0px;
 }
-.demograp .auther .colr .color:nth-child(4){
+
+.demograp .auther .colr .color:nth-child(4) {
     width: 8%;
     background: #6342FF;
     border-radius: 0px;
@@ -86,7 +105,7 @@
 }
 
 
-.demograp .auther .reds{
+.demograp .auther .reds {
     width: 7px;
     height: 7px;
     background: #FD1F9B;

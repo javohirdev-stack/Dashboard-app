@@ -17,7 +17,9 @@ const ChartLine = (props) => {
         }
     }
     const labels = {
-        style: { "background": "#000" }
+        style: {
+            backgroundColor: 'blue',
+        }
     }
     const xAxis = {
         categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
@@ -32,8 +34,8 @@ const ChartLine = (props) => {
     }]
     const plotOptions = {
         column: {
-            borderRadius: 10,
-            color: 'red'
+            borderRadius: 20,
+
         }
     }
 
@@ -53,40 +55,38 @@ const ChartLine = (props) => {
 
 
 
+    const chartooltip = {
+        shared: true,
+        pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f} ta</b><br/>',
+    }
 
+    const chartpane = {
+        size: '90%',
+        backgroundColor: 'blue'
+    }
+    
+    const legend = {
+        enabled: false,
+    }
 
+    return (
+        <div style={{ width: '100%' }}>
 
-const chartooltip = {
-    shared: true,
-    pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f} ta</b><br/>',
+            <HighchartsChart
+                chart={chart}
+                series={series}
+                yAxis={yAxis}
+                xAxis={xAxis}
+                plotOptions={plotOptions}
+                tooltip={chartooltip}
+                pane={chartpane}
+                legend={legend}
+                labels={labels}
+            >
+            </HighchartsChart>
 
-}
-const chartpane = {
-    size: '100%'
-}
-const legend = {
-
-    enabled: false,
-}
-
-return (
-    <div style={{ width: '100%' }}>
-
-        <HighchartsChart
-            chart={chart}
-            series={series}
-            yAxis={yAxis}
-            xAxis={xAxis}
-            plotOptions={plotOptions}
-            tooltip={chartooltip}
-            pane={chartpane}
-            legend={legend}
-            labels={labels}
-        >
-        </HighchartsChart>
-
-    </div>
-);
+        </div>
+    );
 
 }
 

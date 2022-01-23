@@ -1,6 +1,7 @@
+
 .TopNav {
   position: absolute;
-  z-index: 1000;
+  z-index: 3600;
   left: 45%;
   top: -12%;
   background: rgba(0, 0, 0, 0.418);
@@ -24,7 +25,7 @@
   .TopNav {
     left: 28%;
     width: 225px;
-    margin-top: 2%;
+    margin-top: -5%;
     padding: 10px 10px 5px 10px;
   }
 
@@ -34,13 +35,16 @@
 
   .TopNav {
     left: 28%;
-    top: -84px;
+    top: -57px;
     width: 200px;
   }
 
   .TopNav button {
     width: 33%;
 
+  }
+  .UP{
+    top: 3% !important;
   }
 
 }

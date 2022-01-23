@@ -36,7 +36,8 @@ const ChartLine = (props) => {
         column: {
             borderRadius: 20,
 
-        }
+        },
+    
     }
 
     const series = [
@@ -44,7 +45,7 @@ const ChartLine = (props) => {
             name: 'Installation',
             data: [8024, 10723, 9000, 6500, 7456, 9376, 15221, 13675, 14778, 10565, 13456, 19795],
             color: '#30D987',
-       
+
         }, {
             name: 'Manufacturing',
             data: [10467, 11865, 13365, 10043, 12234, 9532, 8045, 6876, 10678, 9165, 8456, 9895],
@@ -54,9 +55,9 @@ const ChartLine = (props) => {
             data: [1200, 2765, 2043, 4234, 5332, 5945, 6586, 5567, 6878, 4005, 5856, 6995],
             color: '#FD1F9B'
         },
-       
-        
-      
+
+
+
     ];
 
 
